@@ -8,10 +8,10 @@ var port = process.env.PORT
 var cors_proxy = require('cors-anywhere')
 
 cors_proxy.createServer({
-  httpsOptions: {
-    key: fs.readFileSync(path.resolve(__dirname, 'server.key')),
-    cert: fs.readFileSync(path.resolve(__dirname, 'server.crt')),
-  },
+  // httpsOptions: {
+  //   key: fs.readFileSync(path.resolve(__dirname, 'server.key')),
+  //   cert: fs.readFileSync(path.resolve(__dirname, 'server.crt')),
+  // },
   originWhitelist: [], // Allow all origins
   requireHeader: [],
   removeHeaders: []
